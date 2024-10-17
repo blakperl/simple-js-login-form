@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-css " id="modal">
+        <div class="form-css">
+            <div class="header"> <h2>Enter details to login</h2>
+               
+            </div>
+          <form action="" id="submit-form">
+            <div class="div">
+              <label for="Name">Email</label> <br>
+            <input id="email" type="email" value=""><br>
+            <p id="email-error" ></p> 
+            </div>
+           <div class="div">
+            <label for="Name">Passowrd</label> <br>
+            <input id="password" type="password" value=""> <br> 
+           <div style="display: flex; ">
+            <p id="password-error"></p> 
+            <span onclick="showPassword()" style="text-align: right; color: rgb(220, 18, 52); font-size: small; cursor: pointer;">show password</span>
+           </div>
+           </div>
+            <div class="div">
+              <label for="Name">Confirm Password</label> <br>
+            <input id="confirm-password" type="password" value=""> <br>     
+            <p id="confirm-error"></p> 
+            </div>
+            <div>
+                <button class="add-btn"  style="width: 80%;">Login</button>
+            </div>
+            <p id="error-message"></p>
+          </form>
+
+            </div>
+
+            <div class="hidden   " id="logout-button">
+              <button   class="add-btn " >Logout</button>
+            </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
